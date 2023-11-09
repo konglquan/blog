@@ -1,4 +1,4 @@
-# Mybatis的XML中LocalDateTime
+# Mybatis的XML中判空问题!=''
 
 报错信息如下
 
@@ -21,6 +21,14 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot des
 ```xml
 <if test="enhanceRuleVo.createTimeStart != null">
   	and create_time &gt;= #{enhanceRuleVo.createTimeStart}
+</if>
+```
+
+Boolean类型也会出现类似的问题
+
+```xml
+<if test="enhanceRuleVo.isSystem != null">
+   and is_system = #{enhanceRuleVo.isSystem}
 </if>
 ```
 
