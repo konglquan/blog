@@ -4,7 +4,7 @@
 
 2、报错，无法注入
 
-<img src="https://raw.githubusercontent.com/konglquan/imgs/main/images/image-20231008143134560.png" alt="image-20231008143134560" style="zoom:50%;" />
+<img src="imgs/image-20231008143134560.png" alt="image-20231008143134560" style="zoom:50%;" />
 
 解决： `@AllArgsConstructor `和 `@Value `冲突
 
