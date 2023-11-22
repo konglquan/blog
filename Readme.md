@@ -1,5 +1,5 @@
 ## Konglquan
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dracula&author=Dambisa%20Moyo&quote=种一棵树最好的时间是十年前，其次是现在。)](https://github.com/konglquan/blog)
+
 
 
 ---
