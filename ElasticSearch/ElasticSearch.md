@@ -104,9 +104,31 @@ curl -XGET -u 'user:password' http://ip:port/_cat/tasks?detailed=true&vPOST
 
 ### 清除任务
 
+### 无法入库（磁盘满了）
+
+1、关闭索引的只读状态：
+
+```shell
+curl -XPUT -u 'user:password' -H 'Content-Type: application/json' http://localhost:9200/_all/_settings -d '{"index.blocks.read_only_allow_delete":null}'
+```
+
+2、关闭磁盘分配保护
+
+```shell
+curl -XPUT -u 'user:password' -H 'Content-Type: application/json' http://localhost:9200/_cluster/settings -d '{"transient":{"cluster.routing.allocation.disk.threshold_enabled":false}}'
+```
+
+3、扩容
+
+4、打开磁盘分配保护
+
+```shell
+curl -XPUT -u 'user:password' -H 'Content-Type: application/json' http://localhost:9200/_cluster/settings -d '{"transient":{"cluster.routing.allocation.disk.threshold_enabled":false}}'
+```
 
 
-# API
+
+# 查询API
 
 ## java操作es之各种高级查询
 
