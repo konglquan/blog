@@ -22,6 +22,46 @@ https://docs.docker.com/engine/install/centos/
 
 
 
+### Docker切换镜像源
+
+Docker官方镜像：
+“https://registry.docker-cn.com”
+
+网易镜像：
+“http://hub-mirror.c.163.com”
+
+中国科技大学镜像：
+“https://docker.mirrors.ustc.edu.cn”
+
+阿里云镜像：
+“https://cr.console.aliyun.com”
+
+腾讯云镜像：
+“https://mirror.ccs.tencentyun.com”
+
+```shell
+sudo vi /etc/docker/daemon.json
+```
+
+```json
+{
+  "registry-mirrors": [
+    "https://docker.mirrors.ustc.edu.cn"
+  ]
+}
+```
+
+重启
+
+```shell
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
+
+
+
+
 ## MySQL容器部署
 
 1、搜索mysql镜像

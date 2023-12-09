@@ -77,7 +77,7 @@ curl -XDELETE  -u 'user:password' http://localhost:9200/indexName
 
 ### 新建模板
 
-```
+```shell
 curl -XPUT -u 'elastic:ff#IST@QA123' -H 'Content-Type: application/json' http://172.31.1.40:9200/_template/cntd_data_dns -d '{"order":0,"template":"cntd_data_dns_*","mappings":{"properties":{"domain":{"type":"keyword","ignore_above":256},"return_ip":{"type":"keyword","ignore_above":256},"time":{"type":"date","store":true,"format":"yyyy-MM-dd HH:mm:ss"},"top_domain":{"type":"keyword","ignore_above":256}}},"settings":{"index":{"number_of_shards":"8","number_of_replicas":"0"}}}'
 
 ```
