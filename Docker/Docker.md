@@ -58,9 +58,11 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 
+检查设置是否生效
 
-
-
+```shell
+sudo docker info
+```
 
 ## MySQL容器部署
 
@@ -162,4 +164,24 @@ docker update redis --restart=always
 ```
 
 ## ElasticSearch容器部署
+
+
+
+
+
+
+
+
+
+## 部署微服务项目
+
+```
+sudo apt-get install openjdk-8-jdk
+```
+
+安装maven
+
+```
+sudo apt-get install maven
+```
 

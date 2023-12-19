@@ -79,8 +79,6 @@ sudo apt install openssh-server
 sudo passwd root
 ```
 
-
-
 ### 3、配置apt-get源
 
 清华源：https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
