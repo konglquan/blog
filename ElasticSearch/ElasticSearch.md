@@ -43,6 +43,12 @@ curl -XGET -u 'user:password' http://localhost:9200/_cat/indices?v
 curl -XGET -u 'user:password' http://localhost:9200/indexName/_search?pretty
 ```
 
+### 根据ID查询
+
+```shell
+curl -XGET -u 'user:password'http://localhost:9200//index/_doc/id
+```
+
 ### 查看索引mapping
 
 ```shell
