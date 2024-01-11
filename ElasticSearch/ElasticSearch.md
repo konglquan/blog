@@ -88,6 +88,11 @@ curl -XPUT -u 'user:password' -H 'Content-Type: application/json' http://172.31.
 
 ```
 
+```shell
+curl -XPUT -u 'user:password' -H 'Content-Type: application/json' http://172.31.1.40:9200/_template/cntd_data_dns -d '{"order":0,"index_patterns":["cntdddddddtest*"],"settings":{"index":{"number_of_shards":"8","number_of_replicas":"0"}},"mappings":{"properties":{"top_domain":{"ignore_above":256,"type":"keyword"},"return_ip":{"ignore_above":256,"type":"keyword"},"domain":{"ignore_above":256,"type":"keyword"},"time":{"format":"yyyy-MM-dd HH:mm:ss","store":true,"type":"date"}}}}'
+
+```
+
 
 
 ### 删除模板
