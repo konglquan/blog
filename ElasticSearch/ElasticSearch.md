@@ -137,6 +137,25 @@ curl -XPUT -u 'user:password' -H 'Content-Type: application/json' http://localho
 curl -XPUT -u 'user:password' -H 'Content-Type: application/json' http://localhost:9200/_cluster/settings -d '{"transient":{"cluster.routing.allocation.disk.threshold_enabled":false}}'
 ```
 
+### ES将某个字段插入到整个索引中
+
+```
+POST /sc_target_task/_update_by_query
+
+{
+  "script": {
+    "source": "ctx._source.reportingLevels = params.reportingLevels",
+    "params": {
+      "reportingLevels": [
+        "高危",
+        "中危",
+        "低危"
+      ]
+    }
+  }
+}
+```
+
 
 
 # 查询API
