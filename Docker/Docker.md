@@ -45,9 +45,11 @@ sudo vi /etc/docker/daemon.json
 
 ```json
 {
-  "registry-mirrors": [
-    "https://docker.mirrors.ustc.edu.cn"
-  ]
+    "registry-mirrors": [
+        "https://docker.m.daocloud.io",
+        "https://docker.nju.edu.cn",
+        "https://dockerproxy.com"
+    ]
 }
 ```
 
