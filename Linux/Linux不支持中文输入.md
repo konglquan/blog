@@ -6,12 +6,32 @@
 
 1.修改 .bash_profile 文件，添加如下代码：
 
+```
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
+```
 
  
 
 2.source一下
 
 . ~/.bashrc
+
+
+
+
+
+
+
+```
+vim ~/.bashrc
+source ~/.bashrc
+```
+
+```
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+```
+
