@@ -58,3 +58,5 @@ export LANGUAGE=en_US.UTF-8
 
 	- 运行 `sudo locale-gen zh_CN.UTF-8` 生成中文语言环境。
 	- 运行 `sudo update-locale LANG=zh_CN.UTF-8` 更新系统语言环境设置。
+
+sudo timedatectl set-timezone  Asia/Shanghai
