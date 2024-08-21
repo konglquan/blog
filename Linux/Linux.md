@@ -43,3 +43,13 @@ date "+%j" ：查看几天是今年内的第几天
 %t：跳格
 ```
 
+
+
+同步时间
+
+```
+sudo timedatectl set-timezone Asia/Shanghai
+sudo timedatectl set-ntp true
+
+```
+
